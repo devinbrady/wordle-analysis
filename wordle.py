@@ -710,8 +710,8 @@ if __name__ == '__main__':
 
 
 
-    # wm.analyze_opening_guesses()
-    wm.best_opening_word()
+    wm.analyze_opening_guesses()
+    # wm.best_opening_word()
 
 
     # wm.one_guess_all_solutions('RAISE', verbose_ogas=True)
