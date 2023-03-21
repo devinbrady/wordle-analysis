@@ -603,8 +603,8 @@ class WordleMe():
             , 'elim_more_than_50'
             , 'elim_more_than_50_rank'
         ]
-        openings_stats[output_columns].sort_values(by=['elim_more_than_50_rank', 'elim_perc_mean_rank']).to_csv('openings_stats.csv')
-        print('Stats saved to: openings_stats.csv')
+        openings_stats[output_columns].sort_values(by=['elim_more_than_50_rank', 'elim_perc_mean_rank']).to_csv('opening_stats.csv')
+        print('Stats saved to: opening_stats.csv')
 
         # print(sum(df['RAISE'] < 0.6))
 
@@ -710,8 +710,8 @@ if __name__ == '__main__':
 
 
 
-    wm.analyze_opening_guesses()
-    # wm.best_opening_word()
+    # wm.analyze_opening_guesses()
+    wm.best_opening_word()
 
 
     # wm.one_guess_all_solutions('RAISE', verbose_ogas=True)
